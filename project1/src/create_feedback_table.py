@@ -10,7 +10,9 @@ CREATE TABLE Feedback (
     author varchar(200),
 	content TEXT NOT NULL
 );
-INSERT INTO Feedback (author, content) VALUES('johndoe','This is great!');
+INSERT INTO Feedback (author, content) VALUES('admin','This feedback is from Admin');
+INSERT INTO Feedback (author, content) VALUES('alice','This feedback is from Alice');
+INSERT INTO Feedback (author, content) VALUES('bob','This feedback is from Bob');
 COMMIT;
 """
 

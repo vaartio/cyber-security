@@ -5,8 +5,9 @@
     </head>
 
     <body>
+        <!-- A solution for Cross-Site Scripting issue: Remove autoescape off to make variables safe -->
+        {% autoescape off %}
 		<h1>Give feedback</h1>
-
         <table>
             <tr>
                 <th style="text-align:left">Author</th>
@@ -31,6 +32,8 @@
 
             <input type="submit" value="Add!"/>
         </form>
+        <!-- A solution for Cross-Site Scripting issue: Remove endautoescape to make variables safe -->
+        {% endautoescape %}
     </body>
 
 
